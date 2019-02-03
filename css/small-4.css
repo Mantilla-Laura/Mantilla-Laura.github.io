@@ -1,0 +1,63 @@
+/**Preston Document CSS*/
+#body {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    color: #000000;
+}
+#name {
+    color:  #35c694;
+    font-family: 'Abadi', sans-serif;
+    font-size: 48px;
+}
+.motto {
+    color: #0a875f;
+    font-family: 'Abadi', sans-serif;
+    font-size: 24px;
+    margin-top: -30px;
+    margin-left: 45px;
+}
+nav {
+    background-color: #2e0e02;
+    color: #ffffff;
+    font-family: 'Abadi', sans-serif;
+    font-size: 22px;
+}
+.navi {
+    background-color: #2e0e02;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+a:link {
+    background-color: #2e0e02;
+}
+a:visited {
+    background-color: #250505c2
+}
+a:focus {
+    background-color: #75230a
+}
+a:hover {
+    background-color: #000000;
+}
+a:active {
+    background-color: #75230a    
+}
+p {
+    font-family: 'Vani', serif;
+    font-size: 16px;
+}
+h1,h2,h3 {
+    color: #0a875f;
+    font-family: 'Abadi', sans-serif;
+}
+footer {
+    background-color: #2e0e02;
+    color: #ffffff;
+    font-size: 18px;
+}
