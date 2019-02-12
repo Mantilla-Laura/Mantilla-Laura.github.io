@@ -1,63 +1,85 @@
 /**Preston Document CSS*/
-#body {
-    width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ffffff;
-    color: #000000;
+@media {min-width: 500px; 
+    max-width: 600px; 
+}
+body {
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+background-color: #ffffff;
+color: #000000;
 }
 #name {
-    color:  #35c694;
-    font-family: 'Abadi', sans-serif;
-    font-size: 48px;
+color:  #35c694;
+font-family: 'Abadi', sans-serif;
+font-size: 48px;
+margin-bottom: 17px;
 }
 .motto {
-    color: #0a875f;
-    font-family: 'Abadi', sans-serif;
-    font-size: 24px;
-    margin-top: -30px;
-    margin-left: 45px;
+color: #0a875f;
+font-family: 'Abadi', sans-serif;
+font-size: 24px;
+margin-top: -30px;
+margin-left: 45px;
+margin-bottom: 7px;
 }
 nav {
-    background-color: #2e0e02;
-    color: #ffffff;
-    font-family: 'Abadi', sans-serif;
-    font-size: 22px;
+display: grid;
+background-color: #2e0e02;
+font-family: 'Abadi', sans-serif;
+font-size: 22px;
+margin-bottom: 4%;
 }
 .navi {
-    background-color: #2e0e02;
+color: #ffffff;
+float: left;
+margin-right: 3%;
+align-content: center;
+list-style: none;
 }
 a {
-    text-decoration: none;
-    color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
+text-decoration: none;
+color: #ffffff;
+margin-left: auto;
+margin-right: auto;
 }
 a:link {
-    background-color: #2e0e02;
+background-color: #2e0e02;
 }
 a:visited {
-    background-color: #250505c2
+background-color: #e62424c2;
 }
 a:focus {
-    background-color: #75230a
+background-color: #a75c46;
 }
 a:hover {
-    background-color: #000000;
+background-color: #bff1de;
 }
 a:active {
-    background-color: #75230a    
+background-color: #0a875f;    
 }
 p {
-    font-family: 'Vani', serif;
-    font-size: 16px;
+font-family: 'Vani', serif;
+font-size: 16px;
+width: 500px;
+margin-left: auto;
+margin-right: auto;
 }
 h1,h2,h3 {
-    color: #0a875f;
-    font-family: 'Abadi', sans-serif;
+color: #0a875f;
+font-family: 'Abadi', sans-serif;
+}
+h3 {
+margin-left: 50px;
+}
+h2 {
+background-color: #ddf0e9;
 }
 footer {
-    background-color: #2e0e02;
-    color: #ffffff;
-    font-size: 18px;
+font-family: 'Abadi', sans-serif;
+background-color: #2e0e02;
+color: #ffffff;
+font-size: 18px;
+padding: 10px;
+list-style: none;
 }
