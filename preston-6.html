@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wow Weather | Home</title>
+    <meta name="description" content="Wow Weather is a site created to be informed of what the weather was, is, and will be like, and you can use that information however you want to.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="css/small-6.css">
+    <link rel="stylesheet" media="(min-width: 500px)" href="css/large-6.css">   
+    <script type="text/javascript" src="scripts/currentdate.js" ></script>
+</head>
+<body onload="renderTime();">
+    <img id="landscape" src="images/cit230_image_franklinOriginal.jpg" alt="vivid landscape">
+    <h1 id="name">Wow Weather</h1>
+    <div class="motto">Your Weather Site</div>
+    <img id="focus" src="images/focus.jpg" alt="hand with a polaroid picture";>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li class="navi"><a href="preston-4.html">Home</a></li>
+            <li class="navi"><a href="preston-5.html">Services</a></li>
+            <li class="navi"><a href="preston-6.html">Weather</a></li>
+            <li class="navi"><a href="#">People</a></li>
+            <li class="navi"><a href="#">About Us</a></li>
+            <li class="navi"><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+            <h1>Weather</h1>
+            <h2>Bucaramanga</h2>
+            <p>The weather in Bucaramanga, Colombia has been changing from day to day this week. Today, Thursday, the temperature is 80F. Tomorrow, Friday, it will be 85F.</p>
+    </main>
+    <footer>
+        <ul>
+            <li>&copy; Laura Mantilla 2019.</li>
+            <div id="renderTime" class="container"></div>
+            <li class="list"><a href="#">Search Site</a></li>
+            <li class="list"><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
