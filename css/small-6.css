@@ -1,0 +1,97 @@
+/**Preston Document CSS*/
+@media (min-width: 300px) and (max-width: 500px) {
+
+body {
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+background-color: #ffffff;
+color: #000000;
+}
+#name {
+color:  #35c694;
+font-family: 'Abadi', sans-serif;
+font-size: 48px;
+position: relative;
+z-index: 100;
+}
+.motto {
+color: #0a875f;
+font-family: 'Abadi', sans-serif;
+font-size: 24px;
+margin-top: -30px;
+margin-left: 45px;
+margin-bottom: -43px;
+position: relative;
+z-index: 101;
+}
+nav {
+display: grid;
+background-color: #2e0e02;
+font-family: 'Abadi', sans-serif;
+font-size: 22px;
+margin-bottom: 4%;
+}
+.navi {
+color: #ffffff;
+float: left;
+margin-right: 3%;
+align-content: center;
+list-style: none;
+}
+a {
+text-decoration: none;
+color: #ffffff;
+margin-left: auto;
+margin-right: auto;
+}
+a:link {
+background-color: #2e0e02;
+}
+a:visited {
+background-color: #e62424c2;
+}
+a:focus {
+background-color: #a75c46;
+}
+a:hover {
+background-color: #bff1de;
+}
+a:active {
+background-color: #0a875f;    
+}
+p {
+font-family: 'Vani', serif;
+font-size: 16px;
+width: 500px;
+margin-left: auto;
+margin-right: auto;
+}
+h1,h2,h3 {
+color: #0a875f;
+font-family: 'Abadi', sans-serif;
+}
+h2 {
+margin-left: 50px;
+}
+main>h1 {
+background-color: #ddf0e9;
+}
+footer {
+font-family: 'Abadi', sans-serif;
+background-color: #2e0e02;
+color: #ffffff;
+font-size: 18px;
+padding: 10px;
+list-style: none;
+}
+#focus {
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+}
+#landscape.fullwidth {
+    width: 100%;
+}
+}
