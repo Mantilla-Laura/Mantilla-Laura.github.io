@@ -1,0 +1,195 @@
+/*Preston 7 CSS*/
+@media (min-width: 600px) and (max-width: 899px) {
+    body {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ffffff;
+        color: #000000;
+        }
+    header {
+        display: flex;
+        background-color: #ffffff;
+        padding: 10px;
+        justify-content: space-between;
+        flex-flow: column wrap;
+    }
+    #name, .motto {
+        position: relative;
+        float: right;
+        margin-left: 40%;
+    }
+    #name {
+        color:  #35c694;
+        font-family: 'Acme', sans-serif;
+        font-size: 48px;
+    }
+    .motto {
+        color: #0a875f;
+        font-family: 'Abadi', sans-serif;
+        font-size: 24px;
+        margin-top: -28px;
+    }
+    #focus {
+        float: left;
+        width: 160px;
+        margin-top: -110px;
+        margin-left: 10%;
+    }
+    nav {
+        display: grid;
+        background-color: #2e0e02;
+        font-family: 'Abadi', sans-serif;
+        font-size: 22px;
+        margin-bottom: 4%;
+        justify-content: space-around;
+        }
+    .navi {
+            color: #ffffff;
+            float: left;
+            list-style: none;
+            }
+            a {
+            text-decoration: none;
+            color: #ffffff;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            a:link {
+            background-color: #2e0e02;
+            }
+            a:visited {
+            background-color: #e62424c2;
+            }
+            a:focus {
+            background-color: #a75c46;
+            }
+            a:hover {
+            background-color: #bff1de;
+            }
+            a:active {
+            background-color: #0a875f;    
+            }
+            #therest {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            p {
+            font-family: 'Vani', serif;
+            font-size: 16px;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            h1,h2,h3 {
+            color: #0a875f;
+            font-family: 'Abadi', sans-serif;
+            }
+            h2 {
+            margin-left: 50px;
+            }
+            main>h1 {
+            background-color: #ddf0e9;
+            text-align: center;
+            }
+            .summary {
+                background-color: rgba(53, 198, 78, 0.7);
+                float: left;
+                margin-top: -25%;
+                position: relative;
+                z-index: 100;
+                padding: 10px;
+                margin-left: 5%;
+                box-shadow: #ffffff;
+            }
+            .summary h5 {
+                font-size: 14px;
+                color: #2e0e02;
+                text-align: center;
+            }
+            .summary li {
+                list-style: none;
+            }
+            .summary span {
+                color: #000000;
+            }
+            footer {
+            display: flex;
+            justify-content: center;
+            flex-flow: column wrap;
+            font-family: 'Abadi', sans-serif;
+            background-color: #2e0e02;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 10px;
+            }
+            footer p {
+                text-align: center;
+            }
+            #renderTime {
+                text-align: center;
+                margin-top: -6px;
+            }
+            #landscape {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+            }
+            .menu {
+                margin: 0 30px 0 0;
+            }
+            .menu a {
+                text-decoration: none;
+                color: #ffffff;
+                margin: 0 10px;
+                line-height: 70px;
+            }
+            span {
+                color: #54D17A;
+            }
+            label {
+                margin: 0 40px 0 0;
+                font-size: 26px;
+                line-height: 70px;
+                display: none;
+            }
+            #toggle {
+                display: none;
+            }
+            label {
+                display: block;
+                cursor: pointer;
+                color: #ffffff;
+            }
+        .menu {
+                display: none;
+                text-align: center;
+                width: 100%;
+            }
+        #toggle:checked + .menu {
+                display: flex;
+                flex-flow: column wrap;
+            }
+   main div {
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: center;
+   } 
+   main img {
+       width: 350px;
+       height: 250px;
+   }
+   figure {
+       display: box;
+       border: 1px black;
+   }
+   figure:hover {
+    box-shadow: 4px 4px 4px 4px #000000;
+}
+   figcaption {
+       padding: 5px;
+       font-family: 'Vani', serif;
+       font-size: 16px;
+   }
+}
