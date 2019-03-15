@@ -226,4 +226,16 @@
                     font-size: 18px;
                     text-align: center;
                 }
+                article {
+                    display: flex;
+                    flex-flow: column wrap;
+                   }
+                   article img {
+                       justify-self: center;
+                       margin-left: 30%;
+                       margin-top: 10px;
+                       margin-bottom: 12px;
+                       border: 5px solid #0a875f;
+                       border-radius: 4px;
+                   }
 }
