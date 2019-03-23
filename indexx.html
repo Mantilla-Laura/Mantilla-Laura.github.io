@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wow Weather | Home</title>
+    <meta name="description" content="Wow Weather is a site created to be informed of what the weather was, is, and will be like, and you can use that information however you want to.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" media="(max-width:599px)" href="css/small-7.0.css">
+    <link rel="stylesheet" media="(min-width: 900px)" href="css/large-7.0.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="css/medium-7.css">
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/windchill.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">  
+  </head>
+  <body onload="renderTime();">
+    <header>
+                <h1 id="name">Wow Weather</h1>
+                <div class="motto">Your Weather Site</div>
+                <img id="focus" src="images/focus.png" alt="hand with a polaroid picture";>
+    </header>
+    <nav>
+            <ul class="navigation">
+                <label for="toggle">&#9776 Menu</label>
+                <input type="checkbox" id="toggle">
+                <div class="menu">
+                        <li class="navi"><a href="indexx.html" title="Home">Home</a></li>
+                        <li class="navi"><a href="preston-7.html" title="Preston">Preston</a></li>
+                        <li class="navi"><a href="#" title="Soda Springs">Soda Springs</a></li>
+                        <li class="navi"><a href="#" title="Fish Haven">Fish Haven</a></li>
+                        <li class="navi"><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+                        <li class="navi"><a href="gallery-7.html" title="Gallery">Gallery</a></li>
+                </div>     
+            </ul>
+    </nav>
+    
+      <section>
+
+      </section>
+
+     <script>
+        var section = document.querySelector('section');
+        var div = document.querySelector('div');
+        var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+
+        request.onload = function() {
+        var idahoCities = request.response;
+        showCities(idahoCities);
+        }
+
+function showCities(jsonObj) {
+  var idCity = jsonObj['towns'];
+      
+  for (var i = 0; i < 3; i++) {
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myPara4 = document.createElement('p');
+    var myList = document.createElement('ul');
+
+    var myimg = document.getElementById('greenvilleC');
+
+    myH2.textContent = idCity[i].name;
+    myPara1.textContent = 'Motto: ' + idCity[i].motto;
+    myPara2.textContent = 'Year Founded: ' + idCity[i].yearFounded;
+    myPara3.textContent = 'Population: ' + idCity[i].currentPopulation;
+    myPara4.textContent = 'Annual Rainfall: ' + idCity[i].averageRainfall;
+    
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+    myArticle.appendChild(myList);
+    myArticle.appendChild(myimg);
+
+    section.appendChild(myArticle);
+  }
+
+  for (var x = [2]; x <= 2; x++) {
+    var myimg2 = document.getElementById('fishhavenC');
+
+    myArticle.appendChild(myimg2);
+  }
+  }
+     </script> 
+     <div id="imagesIdaho">
+     <img src="images/greenville.jpg" alt="Calm day at Greenville" id="greenvilleC">
+     <img src="images/fishhaven.jpg" alt="Partially cloudy at Fish Haven, Idaho" id="fishhavenC">
+     <img src="images/franklin.jpg" alt="Hot weather in Franklin, Idaho" id="franklinC">
+     </div>
+     <footer>
+            <p>&copy; 2019 Wow Weather | Laura Mantilla.</p><br>   
+             <div id="renderTime" class="container"></div>
+     </footer>
+  </body>
+  </html>
