@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wow Weather | Preston</title>
+    <meta name="description" content="Wow Weather is a site created to be informed of what the weather was, is, and will be like, and you can use that information however you want to.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" media="(max-width: 599px)" href="css/small-10.css">
+    <link rel="stylesheet" media="(min-width: 900px)" href="css/large-10.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="css/medium-10.css">   
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/windchill.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <script type="text/javascript" src="scripts/prestonw.js"></script>
+</head>
+<body onload="renderTime();">
+    <header>
+    <h1 id="name">Wow Weather</h1>
+    <div class="motto">Your Weather Site</div>
+    <img id="focus" src="images/focus.png" alt="hand with a polaroid picture";>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <label for="toggle">&#9776 Menu</label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+                    <li class="navi"><a href="indexx.html" title="Home">Home</a></li>
+                    <li class="navi"><a href="preston-10.html" title="Preston">Preston</a></li>
+                    <li class="navi"><a href="#" title="Soda Springs">Soda Springs</a></li>
+                    <li class="navi"><a href="#" title="Fish Haven">Fish Haven</a></li>
+                    <li class="navi"><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+                    <li class="navi"><a href="gallery-7.html" title="Gallery">Gallery</a></li>
+            </div>     
+        </ul>
+    </nav>
+    <div id="therest">
+    <main>
+            <h1>Preston</h1>
+            <img id="landscape" src="images/cit230_image_franklinOriginal.jpg" alt="landscape">
+            <div class="summary"><h5>Weather Summary</h5>
+                <ul>
+                    <li>Currently: <span id="currently"></span></li>
+                    <li>High: <span id= "tValue"></span></li>
+                    <li>Wind Chill: <span id="outputSpan"></span></li>
+                    <li>Humidity: <span id="humidity"></span></li>
+                    <li>Wind Speed: <span id="sValue"></span> mph</li>
+                </ul>
+            </div>
+            <article id="article">
+                <h2>The Temperature</h2>
+                <p>Temperature in Preston has maintained its flow between the 30 and 30°F. Night time is when the low temperature comes to feeeze people in the city, using a warm coat and a good pair of boots is recommended if going out.  </p>
+                <img src="images/prestonimage.jpg" alt="Preston Snow">
+            </article> 
+            <section id="forecast">
+                <h2>5 Day Forecast</h2>
+                <section id="forecastbox">
+                    <ul id="days">
+                        <li id="day1">Day 1</li>
+                        <li id="day2">Day 2</li>
+                        <li id="day3">Day 3</li>
+                        <li id="day4">Day 4</li>
+                        <li id="day5">Day 5</li>
+                    </ul>
+                    <ul id="daytemp">
+
+                    </ul>
+                </section>        
+    </main>
+    <footer>
+           <p>&copy; 2019 Wow Weather | Laura Mantilla.</p><br> 
+           <p>Data opened and licensed by Open Data Commons Open Database License (ODbL)</p> 
+           <p>Weather data course by OpenWeatherMap</p> 
+            <div id="renderTime" class="container"></div>
+    </footer>
+    </div>
+</body>
+</html>
