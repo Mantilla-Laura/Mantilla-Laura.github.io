@@ -1,0 +1,369 @@
+/*Preston 7 CSS*/
+@media (min-width: 900px) and (max-width: 2000px) {
+    body {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ffffff;
+        color: #000000;
+        }
+    header {
+        display: grid;
+        background-color: #ffffff;
+        padding-bottom: 10px;
+    }
+    #name {
+        justify-self: center;
+        color:  #35c694;
+        font-family: 'Acme', sans-serif;
+        font-size: 48px;
+    }
+    .motto {
+        justify-self: center;
+        color: #0a875f;
+        font-family: 'Abadi', sans-serif;
+        font-size: 24px;
+        margin-top: -28px;
+    }
+    #focus {
+        float: left;
+        width: 160px;
+        margin-top: -110px;
+        margin-left: 26%;
+    }
+    nav {
+        display: grid;
+        background-color: #2e0e02;
+        font-family: 'Abadi', sans-serif;
+        font-size: 22px;
+        margin-bottom: 4%;
+        justify-content: space-around;
+        }
+    .navi {
+            color: #ffffff;
+            float: left;
+            list-style: none;
+            }
+            a {
+            text-decoration: none;
+            color: #ffffff;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            a:link {
+            background-color: #2e0e02;
+            }
+            a:visited {
+            background-color: #e62424c2;
+            }
+            a:focus {
+            background-color: #a75c46;
+            }
+            a:hover {
+            background-color: #bff1de;
+            }
+            a:active {
+            background-color: #0a875f;    
+            }
+            #therest {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            p {
+            font-family: 'Vani', serif;
+            font-size: 16px;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            h1,h2,h3 {
+            color: #0a875f;
+            font-family: 'Abadi', sans-serif;
+            }
+            h2 {
+            margin-left: 50px;
+            }
+            main>h1 {
+            background-color: #ddf0e9;
+            text-align: center;
+            }
+            .summary {
+                width: 300px;
+                background-color: rgba(53, 198, 78, 0.7);
+                float: left;
+                margin-top: -25%;
+                position: relative;
+                z-index: 100;
+                padding: 10px;
+                margin-left: 5%;
+                box-shadow: #0a875f;
+            }
+            .summary h5 {
+                font-size: 14px;
+                color: #2e0e02;
+                text-align: center;
+            }
+            .summary li {
+                list-style: none;
+            }
+            .summary span {
+                color: #000000;
+            }
+            footer {
+            display: flex;
+            justify-content: center;
+            flex-flow: column wrap;
+            font-family: 'Abadi', sans-serif;
+            background-color: #2e0e02;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 10px;
+            }
+            footer p {
+                text-align: center;
+            }
+            #renderTime {
+                text-align: center;
+                margin-top: -6px;
+            }
+            #landscape {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+            }
+            .menu {
+                margin: 0 30px 0 0;
+            }
+            .menu a {
+                text-decoration: none;
+                color: #ffffff;
+                margin: 0 10px;
+                line-height: 70px;
+            }
+            span {
+                color: #54D17A;
+            }
+            label {
+                margin: 0 40px 0 0;
+                font-size: 26px;
+                line-height: 70px;
+                display: none;
+            }
+            #toggle {
+                display: none;
+            }
+   .setofimages {
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: center;
+   } 
+   main img {
+       width: 350px;
+       height: 250px;
+   }
+   figure {
+       display: box;
+       box-shadow: 3px 3px rgba(128, 128, 128, 0.562);
+       border: 1px black;
+   }
+   figure:hover {
+       box-shadow: 4px 4px 4px 4px #000000;
+   }
+   figcaption {
+       padding: 5px;
+       font-family: 'Vani', serif;
+       font-size: 16px;
+   }
+form {
+    width: 50%;
+    font-family: 'Abadi', sans-serif;
+    font-size: 20x;
+    margin-left: 40%;
+    margin-bottom: 10px;
+    color: #292828;
+}
+input {
+    border-radius: 2px;
+    width: 35%;
+}
+textarea {
+    width: 300px;
+    height: 100px;
+}
+#radios input {
+    width: 5%;
+    justify-content: space-between;
+}
+#thanks {
+    font-size: 80px;
+    text-align: center;
+}
+#thanksp {
+    font-size: 36px;
+    text-align: center;
+}
+#article {
+    display: flex;
+    flex-flow: column wrap;
+   }
+   #article img {
+       justify-self: center;
+       margin-left: 30%;
+       margin-top: 10px;
+       margin-bottom: 12px;
+       border: 5px solid #0a875f;
+       border-radius: 4px;
+   }
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+section article {
+    display: flex;
+    flex-flow: column;
+    border: 5px double #491603; 
+    border-radius: 3px;
+    width: 20%;
+    height: 500px;
+    justify-self: center;
+    font-family: 'Vani', serif; 
+    font-size: 16px;
+    color: #000000;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+#imagesIdaho {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+div img {
+    width: 200px;
+}
+article #greenvilleC {
+    display: -moz-box;
+    border: 2px solid #000000;
+}
+article img {
+    width: 200px;  
+}
+#fishhavenC {
+    position: relative;
+    float: left;
+    margin-left: -430px;
+    margin-top: -130px;
+    clear: both;
+    overflow: auto;
+    border: 2px solid #000000;
+}
+#franklinC {
+    position: relative;
+    float: left;
+    margin-left: -900px;
+    margin-top: -210px;
+    clear: both;
+    height: 150px;
+    border: 2px solid #000000;
+} 
+  #forecast {
+    margin: auto;
+    margin-top: 4em;
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    padding-top: 0;
+    margin-bottom: 3em;
+  }
+  
+  #days {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-left: 4.4em;
+    column-gap: 3rem;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  #daytemp {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    text-align: left;
+    column-gap: 2rem;
+    list-style: none;
+    height: 8em;
+  }
+  #day1,
+  #day2,
+  #day3,
+  #day4,
+  #day5 {
+    border: 0.2rem solid #2e0e02;
+    border-radius: 2%;
+    background-color: #35c694;
+    padding: 7px;
+    font-weight: bold;
+  }
+  
+  #day1 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: -2.5em;
+  }
+  
+  #day2 {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 0.7em;
+  }
+  
+  #day3 {
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: 0.7em;
+  }
+  
+  #day4 {
+    grid-column: 4;
+    grid-row: 1;
+    margin-left: 0.9em;
+  }
+  
+  #day5 {
+    grid-column: 5;
+    grid-row: 1;
+    margin-left: 1.3em;
+  }
+  #days li {
+    float: left;
+    font-family: 'Abadi', sans-serif;
+    font-size: 22px;
+    width: 5em;
+  }
+  section article img {
+      width: 4em;
+      height: 4em;
+      text-align: center;
+      list-style: none;
+      display: block;
+  }
+  #forecastbox article {
+      width: 7em;
+      justify-content: center;
+      height: 8em;
+      font-family: 'Abadi', sans-serif;
+      font-size: 19px;
+      background-color: #bff1de;
+      border-color: #2e0e02;
+  }
+}
