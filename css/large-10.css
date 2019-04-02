@@ -350,7 +350,7 @@ article img {
     font-size: 22px;
     width: 5em;
   }
-  section article img {
+  #forecastbox article img {
       width: 4em;
       height: 4em;
       text-align: center;
