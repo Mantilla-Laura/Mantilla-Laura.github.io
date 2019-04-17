@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temple Inn & Suites | Indiana Temple </title>
+    <meta name="description" content="The purpose of this site is to show the users the different hotel accommodations Temple Inn & Suites has to offer to accommodate people near the Temples of The Church of Jesus Christ of Latter-Day Saints around the world.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" media="(max-width: 599px)" href="css/temple-small.css">
+    <link rel="stylesheet" media="(min-width: 900px)" href="css/temple-large.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="css/temple-medium.css">   
+    <link href="https://fonts.googleapis.com/css?family=Euphoria+Script" rel="stylesheet">
+</head>
+<body onload="renderTime();">
+    <header>
+    <h1 id="name">Temple Inn & Suites</h1>
+    <div class="motto">With the View on High</div>
+    <img id="focus" src="images/logo1.png" alt="lds temple in Salt Lake City";>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <label for="toggle">&#9776 Menu</label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+                    <li class="navi"><a href="index.html" title="Home">Home</a></li>
+                    <li class="navi"><a href="temple.html" title="Temple">Temple</a></li>
+                    <li class="navi"><a href="reservation.html" title="Reservation">Reservation</a></li>
+                    <li class="navi"><a href="services.html" title="Services">Services</a></li>
+                    <li class="navi"><a href="contact.html" title="Contact">Contact</a></li>
+            </div>     
+        </ul>
+    </nav>
+
+    <main id="maint">
+        <h1>Indianapolis, Indiana Temple</h1>
+        <img src="images/indianatemple.jpg" alt="Indiana Temple">
+        <h3>Address:</h3><p id="demo1"></p>
+        <h3>Telephone:</h3><p id="demo2"></p>
+        <h3>Services:</h3><p id="demo3"></p>
+        <h3>History:</h3><p id="demo4"></p>
+        <h3>Ordinance Schedule:</h3><p id="demo5"></p>
+        <h3>Session Schedule:</h3><p id="demo6"></p>
+        <h3>Closure Schedule:</h3><p id="demo7"></p>
+        <h3 id="h2">Weather in Atlanta</h3>
+        <h2>In the next five days</h2>
+        <section id="forecast">
+        <section id="forecastbox">
+                <ul id="days">
+                    <li id="day1">Day 1</li>
+                    <li id="day2">Day 2</li>
+                    <li id="day3">Day 3</li>
+                    <li id="day4">Day 4</li>
+                    <li id="day5">Day 5</li>
+                </ul>
+                <ul id="daytemp">
+                </ul>
+        </section>
+        </section>        
+    </main>
+    <script>
+        var txt = '{"address":"11565 Temple Dr <br> Carmel, Indiana <br> United States", "telephone": "(+1) 317-993-3800", "services":"NO clothing rental available, NO cafeteria available, NO patron housing available, NO distribution center nearby.", "history":"The Indianapolis Indiana Temple was the first temple built in Indiana. <br> The design of the stately spire of the Indianapolis Indiana Temple draws inspiration from the historic memorials and monuments found in the heart of Indianapolis, such as the Indiana World War Memorial and the Soldiers and Sailors Monument.", "ordinances":"Baptistry: <br> Tuesday <br> 6:00 pm - 8:00 pm  Church Groups - Appoinments Only <br><br> Wednesday <br> 10:00 am - 11:00 am Family Priority Time - Walk-ins and Appoinments <br> 11:00 am - 12:00 pm Family Priority Time - Walk-ins and Appoinments <br> 12:00 pm - 1:00 pm Family Priority Time - Walk-ins and Appoinments <br><br> Thursday <br> 6:00 pm - 8:00 pm Church Groups - Appoinments Only <br><br> Friday <br> 10:00 am - 11:00 am Family Priority Time - Walk-ins and Appointments <br> 11:00 am - 12:00 pm Family Priority Time - Walk-ins and Appointments <br> 12:00 pm - 1:00 pm Family Priority Time - Walk-ins and Appointments <br><br> Saturday <br> 8:00 am - 1:00 pm Church Groups - Appointments Only <br> 1:00 pm - 3:00 pm Family Priority Time - Walk-ins and Appointments <br><br><br> Sealing: <br> Tuesday <br> 6:01 pm - 9:01 pm Walk-ins and Appoinments<br><br> Wednesday <br> 10:01 am - 2:01 pm Walk-ins and Appoinments <br> 6:01 pm - 9:01 pm Walk-ins and Appoinments <br><br> Thursday <br> 6:01 pm - 9:01 pm Walk-ins and Appoinments <br><br> Friday <br> 10:01 am - 2:01 pm Walk-ins and Appoinments <br> 6:01 pm - 9:01 pm Walk-ins and Appoinments <br><br> Saturday <br> 8:31 am - 10:01 am Walk-ins and Appointments <br> 10:31 am - 11:31 am Walk-ins and Appointments <br> 12:01 pm - 1:31 pm Walk-ins and Appointments <br><br><br> Initiatory: <br> Tuesday <br> 5:30 pm - 9:00 pm Walk-ins and Appointments <br><br> Wednesday <br> 9:30 am - 2:00 pm Walk-ins and Appointments <br> 5:30 pm - 9:00 pm Walk-ins and Appointments <br><br> Thursday <br> 5:30 pm - 9:00 pm Walk-ins and Appointments <br><br> Friday <br> 9:30 am - 2:00 pm Walk-ins and Appointments <br> 5:30 pm - 9:00 pm Walk-ins and Appointments <br><br> Saturday <br> 8:00 am - 3:00 pm Walk-ins and Appointments", "sessions":"Tuesday <br> 6:00 pm Walk-ins and Appointments <br> 7:30 pm Walk-ins and Appointments <br><br> Wednesday <br> 10:00 am Walk-ins and Appointments <br> 12:00 pm Walk-ins and Appointments <br> 6:00 pm Walk-ins and Appointments <br> 7:30 pm Walk-ins and Appointments <br><br> Thursday <br> 6:00 pm Walk-ins and Appointments <br> 7:30 pm Walk-ins and Appointments <br><br> Friday <br> 10:00 am Walk-ins and Appointments <br> 12:00 pm Walk-ins and Appointments <br> 6:00 pm Walk-ins and Appointments <br> 7:30 pm Walk-ins and Appointments <br><br> Saturday <br> 8:30 am Walk-ins and Appointments <br> 10:00 am Walk-ins and Appointments <br> 12:00 pm Walk-ins and Appointments <br> 1:30 pm Walk-ins and Appointments", "closure":"Thursday, 4 July 2019 <br> Monday, 26 August 2019 - Monday, 9 September 2019 <br> Saturday, 5 October 2019 <br> Wednesday, 27 November 2019 - Thursday, 28 November 2019 <br> Tuesday, 24 December 2019 - Wednesday, 25 December 2019 <br> Tuesday, 31 December 2019"}'
+        var obj = JSON.parse(txt);
+        document.getElementById("demo1").innerHTML = obj.address; 
+        document.getElementById("demo2").innerHTML = obj.telephone;
+        document.getElementById("demo3").innerHTML = obj.services;
+        document.getElementById("demo4").innerHTML = obj.history;
+        document.getElementById("demo5").innerHTML = obj.ordinances;
+        document.getElementById("demo6").innerHTML = obj.sessions;
+        document.getElementById("demo7").innerHTML = obj.closure;
+
+        var apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=4861712&units=imperial&APPID=9d69a5a66566118f01e8c7e5bc5fb9e8';
+var weatherRequest = new XMLHttpRequest();
+weatherRequest.open('GET', apiURLstring, true);
+weatherRequest.responseType = 'text';
+weatherRequest.send();
+
+var forecastRequest = new XMLHttpRequest();
+var apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=4861712&units=imperial&APPID=9d69a5a66566118f01e8c7e5bc5fb9e8';
+forecastRequest.open('GET', apiURL, true);
+forecastRequest.responseType = 'text';
+forecastRequest.send();
+
+weatherRequest.onload = function () {
+    var weatherData = JSON.parse(weatherRequest.responseText);
+    document.getElementById("currently").innerHTML = weatherData.weather[0].description;
+    document.getElementById("tValue").innerHTML = Math.round(weatherData.main.temp_max) + "&#176;F";
+    document.getElementById("humidity").innerHTML = weatherData.main.humidity + "%";
+    document.getElementById("sValue").innerHTML = weatherData.wind.speed + " MPH";
+}
+
+forecastRequest.onload = function () {
+    var forecastData = JSON.parse(forecastRequest.responseText);
+    for (var i = 0; i <= 40; i++) {
+        var list = forecastData.list[i];
+        var ulList = document.getElementById('daytemp');
+        var checkList = list.dt_txt;
+
+        if (checkList.includes('18:00:00')) {
+            var listItem = document.createElement('li');
+            var articleL = document.createElement('article');
+            var icon = document.createElement("img");
+            articleL.textContent = Math.round(list.main.temp) + "\u00B0" + "F";
+            icon.src = "https://openweathermap.org/img/w/" + list.weather[0].icon + ".png";
+            icon.alt = list.weather[0].description;
+            articleL.appendChild(icon);
+            listItem.appendChild(articleL);
+            ulList.appendChild(listItem);
+        }
+    }
+}
+    </script>
+    <footer>
+        <div class="foot1">
+           <p><a href="contact.html">Contact us now Here!</a></p> 
+           <p>Tel: 3132039449 <a href="mailto:mantillalc@hotmail.com">E-mail: mantillalc@hotmail.com</a></p> 
+        </div> 
+           <p>&copy; 2019 Wow Weather | Laura Mantilla.</p>
+        <div class="foot1">
+           <p><a href="#">About us</a></p>
+           <p><a href="#">Work with us</a></p>
+        </div>
+    </footer>
+</body>
+</html>

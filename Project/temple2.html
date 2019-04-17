@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temple Inn & Suites | Frankfurt Temple </title>
+    <meta name="description" content="The purpose of this site is to show the users the different hotel accommodations Temple Inn & Suites has to offer to accommodate people near the Temples of The Church of Jesus Christ of Latter-Day Saints around the world.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" media="(max-width: 599px)" href="css/temple-small.css">
+    <link rel="stylesheet" media="(min-width: 900px)" href="css/temple-large.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="css/temple-medium.css">   
+    <link href="https://fonts.googleapis.com/css?family=Euphoria+Script" rel="stylesheet">
+</head>
+<body onload="renderTime();">
+    <header>
+    <h1 id="name">Temple Inn & Suites</h1>
+    <div class="motto">With the View on High</div>
+    <img id="focus" src="images/logo1.png" alt="lds temple in Salt Lake City";>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <label for="toggle">&#9776 Menu</label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+                    <li class="navi"><a href="index.html" title="Home">Home</a></li>
+                    <li class="navi"><a href="temple.html" title="Temple">Temple</a></li>
+                    <li class="navi"><a href="reservation.html" title="Reservation">Reservation</a></li>
+                    <li class="navi"><a href="services.html" title="Services">Services</a></li>
+                    <li class="navi"><a href="contact.html" title="Contact">Contact</a></li>
+            </div>     
+        </ul>
+    </nav>
+
+    <main id="maint">
+        <h1>Frankfurt, Germany Temple</h1>
+        <img src="images/frankfurt-germany-temple.jpg" alt="Frankfurt Temple">
+        <h3>Address:</h3><p id="demo1"></p>
+        <h3>Telephone:</h3><p id="demo2"></p>
+        <h3>Services:</h3><p id="demo3"></p>
+        <h3>History:</h3><p id="demo4"></p> <p>Construction of the Frankfurt Germany Temple met opposition during its early planning phases, but President Gordon B. Hinckley told local officials that they would not regret their decision to permit construction of the temple. It "will be a thing of beauty in this lovely area," he said. "It will be a source of pride to local residents, who will come to speak of it as 'our temple.'"<br>
+
+                President Gordon B. Hinckley broke ground for the Frankfurt Germany Temple the day after he concluded the dedicatory services for the Freiberg Germany Temple. The next day, he dedicated the Stockholm Sweden Temple.<br>
+                
+                The Frankfurt Germany Temple and Freiberg Germany Temple originally belonged to separate nations: Frankfurt to the Federal Republic of Germany (West Germany) and Freiberg to the German Democratic Republic (East Germany), a socialist state created by the Soviet Union. The two nations reunited in 1990, three years after the dedication of the Frankfurt Germany Temple.<br>
+                
+                During its week-and-a-half open house period, the Frankfurt Germany Temple was toured by some 70,000 visitors.<br>
+                
+                As an apostle, Elder Ezra Taft Benson was called to minister in Europe in 1945, following the devastation of World War II, and again in 1963 to serve as president of the European Mission, headquartered in Frankfurt. In August 1987, it was his special treat to return to Frankfurt—now as president of the Church—to dedicate the Frankfurt Germany Temple.<br>
+                
+                The Frankfurt Germany Temple was dedicated in eleven sessions over three days with approximately 12,570 members attending, largely coming from the nations of Germany, Belgium, the Netherlands, and France.<br>
+                
+                On September 7, 2015, the Frankfurt Germany Temple closed for renovation and enlargement. A few months later, a new stake center was dedicated that had been under construction next to the temple, and the former meetinghouse was demolished to make room for a missionary housing facility. The discovery of foundation issues during the renovation doubled the anticipated construction time two years to four years. An underground baptistry was added as part of the remodel.    
+                </p>
+        <h3>Ordinance Schedule:</h3><p id="demo5"></p>
+        <h3>Session Schedule:</h3><p id="demo6"></p>
+        <h3>Closure Schedule:</h3><p id="demo7"></p>
+        <h3 id="h2">Weather in Atlanta</h3>
+        <h2>In the next five days</h2>
+        <section id="forecast">
+        <section id="forecastbox">
+                <ul id="days">
+                    <li id="day1">Day 1</li>
+                    <li id="day2">Day 2</li>
+                    <li id="day3">Day 3</li>
+                    <li id="day4">Day 4</li>
+                    <li id="day5">Day 5</li>
+                </ul>
+                <ul id="daytemp">
+                </ul>
+        </section>
+        </section>        
+    </main>
+    <script>
+        var txt = '{"address":"Talstrasse 10 <br> DE-61381  Friedrichsdorf, Hessen <br> Germany", "telephone": "(+49) 6172-59000", "services":"Clothing rental available, No cafeteria available, Patron housing available, Distribution center nearby.", "history":"The Frankfurt Germany Temple was the fifth temple built in Europe and the second built in the current boundaries of Germany, following the Freiberg Germany Temple (1985).", "ordinances":"Baptistry: No service currently. <br><br> Sealing: Tuesday to Saturday <br> 8:00 AM - 4:00 PM Walk-ins and Appointments <br> 5:00 PM - 8:00 PM Walk-ins and Appointments <br><br> Initiatory: Tuesday to Saturday <br> 8:00 AM - 9:30 AM Walk-ins and Appointments <br> 10:30 AM - 12:30 PM Walk-ins and Appointments <br> 1:30 PM - 3:30 PM Walk-ins and Appointments <br> 4:00 PM - 6:30 PM Walk-ins and Appointments <br> 7:30 PM - 8:30 PM Walk-ins and Appointments", "sessions":"No sessions available.", "closure":"No temple closure enlisted."}'
+        var obj = JSON.parse(txt);
+        document.getElementById("demo1").innerHTML = obj.address; 
+        document.getElementById("demo2").innerHTML = obj.telephone;
+        document.getElementById("demo3").innerHTML = obj.services;
+        document.getElementById("demo4").innerHTML = obj.history;
+        document.getElementById("demo5").innerHTML = obj.ordinances;
+        document.getElementById("demo6").innerHTML = obj.sessions;
+        document.getElementById("demo7").innerHTML = obj.closure;
+
+        var apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=2925533&units=imperial&APPID=9d69a5a66566118f01e8c7e5bc5fb9e8';
+var weatherRequest = new XMLHttpRequest();
+weatherRequest.open('GET', apiURLstring, true);
+weatherRequest.responseType = 'text';
+weatherRequest.send();
+
+var forecastRequest = new XMLHttpRequest();
+var apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=2925533&units=imperial&APPID=9d69a5a66566118f01e8c7e5bc5fb9e8';
+forecastRequest.open('GET', apiURL, true);
+forecastRequest.responseType = 'text';
+forecastRequest.send();
+
+weatherRequest.onload = function () {
+    var weatherData = JSON.parse(weatherRequest.responseText);
+    document.getElementById("currently").innerHTML = weatherData.weather[0].description;
+    document.getElementById("tValue").innerHTML = Math.round(weatherData.main.temp_max) + "&#176;F";
+    document.getElementById("humidity").innerHTML = weatherData.main.humidity + "%";
+    document.getElementById("sValue").innerHTML = weatherData.wind.speed + " MPH";
+}
+
+forecastRequest.onload = function () {
+    var forecastData = JSON.parse(forecastRequest.responseText);
+    for (var i = 0; i <= 40; i++) {
+        var list = forecastData.list[i];
+        var ulList = document.getElementById('daytemp');
+        var checkList = list.dt_txt;
+
+        if (checkList.includes('18:00:00')) {
+            var listItem = document.createElement('li');
+            var articleL = document.createElement('article');
+            var icon = document.createElement("img");
+            articleL.textContent = Math.round(list.main.temp) + "\u00B0" + "F";
+            icon.src = "https://openweathermap.org/img/w/" + list.weather[0].icon + ".png";
+            icon.alt = list.weather[0].description;
+            articleL.appendChild(icon);
+            listItem.appendChild(articleL);
+            ulList.appendChild(listItem);
+        }
+    }
+}
+    </script>
+    <footer>
+        <div class="foot1">
+           <p><a href="contact.html">Contact us now Here!</a></p> 
+           <p>Tel: 3132039449 <a href="mailto:mantillalc@hotmail.com">E-mail: mantillalc@hotmail.com</a></p> 
+        </div> 
+           <p>&copy; 2019 Wow Weather | Laura Mantilla.</p>
+        <div class="foot1">
+           <p><a href="#">About us</a></p>
+           <p><a href="#">Work with us</a></p>
+        </div>
+    </footer>
+</body>
+</html>

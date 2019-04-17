@@ -1,0 +1,534 @@
+/*Preston 7 CSS*/
+@media (min-width: 600px) and (max-width: 899px) {
+        body {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #35a7ff;
+            color: #000000;
+            }
+        #main1 {
+            display: flex;
+            flex-flow: column wrap;
+        }
+        #main2 {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+        }
+        header {
+            display: grid;
+            background-color: #35a7ff;
+            padding-bottom: 10px;
+        }
+        #name {
+            justify-self: left;
+            color:  #ffffff;
+            background-color: #35a7ff;
+            font-family: 'Euphoria Script', cursive;
+            margin-left: 8%;
+            font-size: 45px;
+        }
+        .motto {
+            justify-self: left;
+            color: #ffffff;
+            font-family: 'CordiaUPC', sans-serif;
+            font-size: 20px;
+            margin-top: -28px;
+            padding-left: 3.8em;
+            margin-left: 8%
+        }
+        #focus {
+            float: center;
+            width: 100px;
+            margin-top: -110px;
+            margin-left: 48%;
+        }
+        nav {
+            display: grid;
+            background-color: #d1d1d1;
+            font-family: 'CordiaUPC', sans-serif;
+            font-size: 22px;
+            margin-bottom: 4%;
+            justify-content: space-around;
+            color: #000000;
+            height: 3em;
+            align-content: center;
+            }
+        .navi {
+                color: #000000;
+                float: left;
+                list-style: none;
+                margin-left: 1.5em;
+                margin-right: 1.5em;
+                }
+                a {
+                text-decoration: none;
+                color: #000000;
+                padding: 0.5em;
+                }
+                a:link {
+                background-color: #d1d1d1;
+                }
+                a:visited {
+                background-color: #9494a1;
+                }
+                a:focus {
+                background-color: #d1d1d1;
+                }
+                a:hover {
+                background-color: #35a7ff;
+                }
+                a:active {
+                background-color: #38618c;    
+                }
+    #box1 {
+        display: flex;
+        flex-flow: row;
+        align-content: center;
+        margin-left: 15%;
+    }
+    #subbox1 {
+        display: flex;
+        flex-flow: column;
+    }
+    #box1 p {
+        width: 300px;
+        background: rgb(red, green, blue)
+    }
+    #box1 button {
+        align-self: center;
+        width: 5em;
+    }
+    #templephoto {
+                    width: 300px;
+                    position: relative;
+                    z-index: 1;
+                }
+    p {
+                font-family: 'Book Antiqua', serif;
+                font-size: 16px;
+                width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                }
+    #box2 {          
+                    align-content: center;
+                    margin-right: 10%;
+                    margin-left: 10%;
+                    padding-bottom: 3em;
+                }
+    #box2 h3 {
+                    align-self: center;
+                    padding-left: 3em;
+                    text-align: center;
+                }
+    #box2 .search-container {
+                    float: right;
+                  }
+                  
+    #box2 input[type=text] {
+                    width: 400px;
+                    padding: 6px;
+                    margin-top: 8px;
+                    font-size: 17px;
+                    border: none;
+                  }
+                  
+    #box2 .search-container button {
+                    float: right;
+                    padding: 6px;
+                    margin-top: 8px;
+                    margin-right: 16px;
+                    background: #ddd;
+                    font-size: 17px;
+                    border: none;
+                    cursor: pointer;
+                  }
+                  
+    #box2 .search-container button:hover {
+                    background: #ccc;
+                  }
+    h3 {
+        margin-top: 5em;
+        text-align: center;
+        color: #38618c;
+        font-family: 'CordiaUPC', sans-serif;
+        font-size: 24px;
+    }
+    #title3 {
+        display: none;
+    }
+    #box3 {
+        display: none;
+    }
+    h1,h2 {
+        color: #38618c;
+        font-family: 'CordiaUPC', sans-serif;
+        }
+        h1 {
+        background-color: #c2c7ce;
+        text-align: center;
+        }
+                .summary {
+                    width: 300px;
+                    background-color: rgba(53, 198, 78, 0.7);
+                    float: left;
+                    margin-top: -25%;
+                    position: relative;
+                    z-index: 100;
+                    padding: 10px;
+                    margin-left: 5%;
+                    box-shadow: #0a875f;
+                }
+                .summary h5 {
+                    font-size: 14px;
+                    color: #2e0e02;
+                    text-align: center;
+                }
+                .summary li {
+                    list-style: none;
+                }
+                .summary span {
+                    color: #000000;
+                }
+/*Temples Page*/
+.temples {
+    width: 300px;
+}
+.templediv {
+    padding: 2em;
+}
+.templediv h2 {
+    text-align: center;
+    align-self: center;
+}
+.templediv form {
+    text-align: center;
+}
+#row1 {
+    display: flex;
+    flex-flow: row;
+}
+#row2 {
+    display: flex;
+    flex-flow: row;
+}
+/*Temple 1 page*/
+#maint h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+#maint h2 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: -3em;
+}
+#maint p {
+    background-color: rgba(204, 215, 221, 0.575);
+    font-size: 16px;
+    padding: 1em;
+    width: 700px;
+}
+#maint img {
+    align-self: center;
+    width: 400px;
+    margin-left: 25%;
+    margin-right: auto;
+}
+#forecast {
+    margin: auto;
+    margin-top: 4em;
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    padding-top: 0;
+    margin-bottom: 3em;
+    width: 80%;
+  }
+  
+  #days {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    column-gap: 1rem;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  #daytemp {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    text-align: left;
+    column-gap: 0.4rem;
+    list-style: none;
+  }
+  #day1,
+  #day2,
+  #day3,
+  #day4,
+  #day5 {
+    border: 0.2rem solid #38618c;
+    border-radius: 2%;
+    background-color: #d1d1d1;
+    padding: 2px;
+    font-weight: bold;
+  }
+  
+  #day1 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 4.3em;
+  }
+  
+  #day2 {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 3em;
+  }
+  
+  #day3 {
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: 1.5em;
+  }
+  
+  #day4 {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  
+  #day5 {
+    grid-column: 5;
+    grid-row: 1;
+    margin-left: -2em;
+  }
+  #days li {
+    float: left;
+    font-family: 'CordiaUPC', sans-serif;
+    font-size: 14px;
+    width: 3em;
+  }
+  section article img {
+      width: 1em;
+      height: 3em;
+      text-align: center;
+      list-style: none;
+      display: none;
+  }
+  #forecastbox article {
+      text-align: center;
+      padding: 0.5em;
+      width: 5em;
+      justify-content: center;
+      height: 6em;
+      font-family: 'Abadi', sans-serif;
+      font-size: 14px;
+      background-color: #ffffff;
+      border-color: #38618c;
+      margin: 0%;
+  }
+  /*Reservation CSS*/
+  .form-row {
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+label {
+    display: block;
+    margin: 3px 0;
+}
+.form-row input {
+    width: 220px;
+    padding: 3px 1px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+.form-row input[type="checkbox"] {
+    width: 15px;
+}
+.date-display {
+    display: inline-block;
+    min-width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    min-height: 1em;
+}
+.show-inputbtns .input-buttons {
+    display: inline-block;
+}
+form {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+form input {
+    align-self: center;
+    width: 300px;
+} 
+form textarea {
+    width: 500px;
+    height: 200px;
+    align-self: center;
+}
+form b {
+    font-family: 'CordiaUPC', sans-serif;
+    color: #ffffff;
+    background-color: rgba(79, 63, 172, 0.575);
+    width: 300px;
+    align-self: center;
+}
+#thanks {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+}
+#thanks p {
+    font-family: 'CordiaUPC', sans-serif;
+    font-size: 35px;
+    color: #ffffff;
+}
+/*Services CSS*/
+#main3 p {
+    font-size: 20px;
+    font-family: 'Book Antiqua', serif;
+}
+.figures1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.figures2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+figure img {
+    width: 500px;
+    height: 300px;
+}
+figcaption {
+    font-family: 'CordiaUPC', sans-serif;
+    background-color: #38618c;
+    color: #ffffff;
+    width: 500px;
+    padding: 0.5em;
+}
+#main3 ul{
+    font-family: 'Book Antiqua', serif;
+    font-size: 18px;
+    margin-left: 10%;
+}
+#links {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-right: 5%;
+}
+/*Reception CSS*/
+#main4 {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+}
+#main4 #rep1 {
+    height: 400px;
+    align-self: center;
+}
+#main4 #rep2 {
+    margin-left: 30%;
+    height: 400px;
+    align-self: center;
+}
+#main4 p {
+    font-family: serif;
+    font-size: 20px;
+}
+.contact {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    text-align: center;
+    width: 500px;
+    margin-left: 15%;
+    padding-bottom: 2em;
+}
+iframe {
+    margin-left: 27%;
+    width: 400px;
+}
+    footer {
+                display: flex;
+                justify-content: center;
+                flex-flow: row;
+                font-family: 'CordiaUPC', sans-serif;
+                background-color: #d1d1d1;
+                color: #000000;
+                font-size: 12px;
+                padding: 10px;
+                }
+    .foot1 {
+        display: flex;
+        flex-flow: column;
+    }
+                p {
+                    text-align: center;
+                }
+            #renderTime {
+                text-align: center;
+                margin-top: -6px;
+            }
+            #landscape {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+            }
+            .menu {
+                margin: 0 30px 0 0;
+            }
+            .menu a {
+                text-decoration: none;
+                color: #ffffff;
+                margin: 0 10px;
+                line-height: 70px;
+            }
+            span {
+                color: #54D17A;
+            }
+            label {
+                margin: 0 40px 0 0;
+                font-size: 26px;
+                line-height: 70px;
+                display: none;
+            }
+            #toggle {
+                display: none;
+            }
+            label {
+                display: block;
+                cursor: pointer;
+                color: #ffffff;
+            }
+        .menu {
+                display: none;
+                text-align: center;
+                width: 100%;
+            }
+        #toggle:checked + .menu {
+                display: flex;
+                flex-flow: column wrap;
+            }
+}
